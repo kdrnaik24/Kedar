@@ -1,0 +1,4 @@
+create procedure e_name(IN n varchar,out id int)
+begin
+select empid into id from employee where empname=n;
+end
