@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["uname"].value;
+    var y = document.forms["myForm"]["passwd"].value;
+    if (x == null || x == "" || y == null || y == "") {
+        alert("User Name or Password can not be empty");
+        return false;
+    }
+}
+</script>
+<meta charset="ISO-8859-1">
+
+<link rel="stylesheet" type="text/css" href="CSS/Login.css">
+<title>Insert title here</title>
+</head>
+
+<body>
+<marquee><h1>Welcome To  Cyb-Net</h1></marquee>
+<div id="center">
+<form name="myForm" action = "LoginServlet" method = "get" onsubmit="return validateForm()">
+<div id="uname">
+<label id="uname1">Enter UserName : </label>
+<input type = "text" name = "uname" >
+</div>
+<br><br>
+<div id="pass">
+<label id="pass1">Enter Password : </label> &nbsp;&nbsp;
+<input type = "password" name = "passwd"  >
+</div>
+<br><br>
+<div id="btn">
+<input id="btn1" type = "submit" value = "Login" >
+</div>
+</form>
+</div>
+</body>
+</html>
+
+

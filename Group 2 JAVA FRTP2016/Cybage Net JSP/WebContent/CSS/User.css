@@ -1,0 +1,29 @@
+#outer{
+	position: fixed;
+	/* top: 50%;
+	left: 50%;
+	margin-top: -50px;
+	margin-left: -100px;
+	padding: -50px; */
+	margin-bottom: 90px;
+	margin-left: 600px;
+	margin-top: 160px;
+}
+body{
+	background-color: Khaki;
+}
+#sd{
+	background-color: skyblue;
+	margin-left: 150px;
+	margin-top: 35px;
+	height: 40px;
+	width: 130px;
+}
+#lt{
+	margin-left: 1450px;
+	height: 45px;
+	width: 100px;
+	background-color: orange;
+	font-family: Comic Sans MS;
+	font-weight: bolder;
+}
