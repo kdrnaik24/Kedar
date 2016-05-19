@@ -1,0 +1,30 @@
+#center1{
+	position: fixed;
+	/* top: 50%;
+	left: 50%;
+	margin-top: -50px;
+	margin-left: -100px;
+	padding: -50px; */
+	margin-bottom: 90px;
+	margin-left: 390px;
+}
+body{
+	background-color: Khaki;
+}
+#abook{
+	font-size: 60px;
+}
+#rbook{
+	font-size: 60px;
+}
+h1{
+	font-size: 100px;
+	font-family: Comic Sans MS;
+}
+#btndel{
+	background-color: red;
+	margin-right: 10px;
+	margin-top: 110px;
+	width: 100px;
+	height: 45px;
+}

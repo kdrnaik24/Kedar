@@ -1,0 +1,42 @@
+#center1{
+	position: fixed;
+	/* top: 50%;
+	left: 50%;
+	margin-top: -50px;
+	margin-left: -100px;
+	padding: -50px; */
+	margin-bottom: 90px;
+	margin-left: 390px;
+}
+body{
+	background-color: Khaki;
+}
+#abook{
+	font-size: 60px;
+}
+#rbook{
+	font-size: 60px;
+}
+h1{
+	font-size: 100px;
+	font-family: Comic Sans MS;
+	margin-top: 0px;
+}
+#id{
+	padding: 120px;
+}
+h2{
+	color: black;
+}
+#hh{
+	position: fixed;
+	background-color: transparent;
+	margin-top: -220px;
+}
+#del{
+	width: 150px;
+	height: 35px;
+	margin: 20px;
+	margin-left: -620px;
+	background-color: red;
+}
