@@ -1,0 +1,22 @@
+
+//Creating TestPlan Table
+CREATE TABLE TestPlan(TestPlanId int NOT NULL AUTO_INCREMENT, PlanTitle varchar(255) NOT NULL, Description varchar(255), Status varchar(255) DEFAULT 'Sandnes', Type varchar(255), PRIMARY KEY (TestPlanId))
+
+//Inserting records in TestPlan
+insert into TestPlan (Plantitle,Description,Type)values('Plan1','test','Performance');
+insert into TestPlan (Plantitle,Description,Type)values('Plan2','tes2','Regression');
+
+
+//Creating TestCase Table
+CREATE TABLE TestCase(TestCaseId int NOT NULL, CaseTitle int NOT NULL, Description varchar(255), Datasetexpected varchar(255), TestPlanId int, PRIMARY KEY (TestCaseId), FOREIGN KEY (TestPlanId) REFERENCES TestPlan(TestPlanId));
+
+//Creating TestScript Table
+CREATE TABLE TestScript(TestScriptId int NOT NULL, ScriptTitle varchar(255), Description varchar(255), ExecutionInstruction varchar(255), Dataset varchar(255), TestCaseId int, PRIMARY KEY (TestScriptId), FOREIGN KEY (TestCaseId) REFERENCES TestCase(TestCaseId));
+
+
+//Creating TestLogin table
+create table TestLogin(username varchar (255),password varchar(255));
+
+
+//Creating TestExecution table
+CREATE TABLE TestExecution(TestExecutionId int NOT NULL, RunsON varchar(255), RestTestCase varchar(255), Result varchar(255), Status varchar(255), TestScriptId int, PRIMARY KEY (TestExecutionId), FOREIGN KEY (TestScriptId) REFERENCES TestScript(TestScriptId));
